@@ -1,0 +1,43 @@
+import java.awt.BorderLayout;
+import java.awt.Button;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.GridBagLayout;
+import java.awt.Toolkit;
+
+import javax.swing.*;
+
+public class Frame extends JFrame{
+	
+	static int ancho = Toolkit.getDefaultToolkit().getScreenSize().width;
+	static int alto = Toolkit.getDefaultToolkit().getScreenSize().height;
+	
+	public Frame() {
+		
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setBounds(0,0,ancho,alto);
+		setTitle("Cervantext - Procesador de textos. FORISAN");
+		agregacion_layouts();
+				
+	}
+	
+    private void agregacion_layouts() {
+    	
+    	// ÁREA DE TRABAJO Y LA BARRA DE DESPLAZAMIENTO
+    	// ----------------------------------------------------------------------------------------------------------------------------------
+    	
+    	JScrollPane barra = new JScrollPane(Principal.area, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+    	barra.setPreferredSize(new Dimension(ancho,alto));
+    	barra.setBackground(Color.gray);
+    	add(barra);
+    	
+    	
+    	// MENÚ SUPERIOR
+    	// ---------------------------------------------------------------------------
+    	
+    	add(Principal.menu, BorderLayout.NORTH);
+    
+    }
+}
