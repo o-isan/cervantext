@@ -1,17 +1,34 @@
-<h1>CervanText es un procesador de textos alternativo</h1>
-<h2>A los convencionales como Microsoft Word o LibreOffice Writer.</h2>
+# CervanText. Un procesador de textos Web
+Es un procesador de textos escrito en Java con la libería de GUI swing. Permite introducir los distintos elementos en el documento como si se trataran de bloques independientes.
 
-<p>Apuesta por la división del contenido en bloques, que a su vez se pueden dividir en columnas.</p>
+Esta inspirado en el editor Gutenberg, de Wordpress, pues además de usar la tecnología de los bloques, Cervantext está pensado para exportar HTML.
 
-<p>Esto hace que la estructura del documento mantenga su integridad en todo momento, ya que solamente puede haber un elemento multimedia (imagen, tabla, encabezado, parrafo ... etc)
-en cada bloque.</p>
 
-<p>De manera que el objetivo de CervanText es conseguir crear documentos:</p>
+De esta forma los párrafos, encabezados, imágenes y tablas están bien estructurados. Incluso se pueden añadir columnas.
+![Vista de un documento sencillo](img/0.png)
+![Vista de un documento con columnas](img/1.png)
 
-<ul>
-  <li><strong>Organizados</strong></li>
-  <li><strong>Portables</strong></li>
-  <li><strong>Estructurados</strong></li>
-</ul>
 
-<p>Siendo mi referente el editor web "Gutenberg" tan utilizado por quienes usan el CMS Wordpress.</p>
+Las fuentes disponibles son las que hay en el sistema. Esto reduce drasticamente el tamaño del ejecutable. Sin embargo tendrá que tenerlas instaladas.
+![Vista de la ventana de fuentes de letra](img/2.png)
+
+
+Se puede cambiar la resolución de las imágenes si se tratan como un bloque independiente.
+![Vista de la ventana del bloque Imágen](img/5.png)
+
+
+A través del bloque Tabla puedes crear una tabla a medida, seleccionando previamente el número de filas y columnas.
+![Vista del bloque: Tabla](img/4.png)
+
+
+Los encabezados se comportan como h1, h2, h3 ... h6. Al igual que los párrafos son etiquetas p.
+![Vista de un documento con encabezado, párrafo, y tabla](img/6.png)
+
+Para quienes tienen problemas distinguiendo iconos está el modo texto, para ver las opciones del menú explicadas con texto. 
+![Vista del menu textual sin iconos](img/3.png)
+
+
+
+Aquí un vídeo de demostración para que vean como funciona CervanText.
+
+
