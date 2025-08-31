@@ -26,9 +26,3 @@ Los encabezados se comportan como h1, h2, h3 ... h6. Al igual que los párrafos 
 
 Para quienes tienen problemas distinguiendo iconos está el modo texto, para ver las opciones del menú explicadas con texto. 
 ![Vista del menu textual sin iconos](img/3.png)
-
-
-
-Aquí un vídeo de demostración para que vean como funciona CervanText.
-
-
